@@ -38,9 +38,9 @@ function Stopwatch() {
   return (
     <div>
         <h1>Stopwatch</h1>
-        <h3>Time {format(time)}</h3>
-        <button onClick={startStop}>{!toggle ? "start" : "stop"}</button>
-        <button onClick={reset}>reset</button>
+        <p>Time: {format(time)}</p>
+        <button onClick={startStop}>{!toggle ? "Start" : "Stop"}</button>
+        <button onClick={reset}>Reset</button>
     </div>
   )
 }
